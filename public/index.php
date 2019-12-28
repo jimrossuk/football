@@ -20,16 +20,26 @@
             <input name="first-name"  type="text" maxlength="512" id="first-name" class="name">
             <input name="first-name"  type="text" maxlength="512" id="first-name" class="name">
             
+            <input name="first-name"  type="text" maxlength="512" id="first-name" class="name">
+            <input name="first-name"  type="text" maxlength="512" id="first-name" class="name">
+            <input name="first-name"  type="text" maxlength="512" id="first-name" class="name">
+            <input name="first-name"  type="text" maxlength="512" id="first-name" class="name">
+            <input name="first-name"  type="text" maxlength="512" id="first-name" class="name">
+            
 
             
             <button onclick= getTheData() >click this it</button>
 
             <div>
-                <h1 style=background:red; id="showTeamMembers">
+                <ul  id="showTeamMembers">
+                  
                     
-                </h1>
+</ul>
             </div>
 
+            <div id="makeTheTeam">
+
+            </div>
            
 
         </div>
