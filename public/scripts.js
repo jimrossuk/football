@@ -16,12 +16,15 @@ function getTheData() {
             teamMembers.push(singleVal);
         }
     }
-    let showVals = document.getElementById('showteamMembers');
+    let showVals = document.getElementById('showTeamMembers');
 
     //Convert to string format to see the output easily 
-    let stringFormat = String(teamMembers);
-    showVals.innerHTML = stringFormat;
+    let stringFormat = String(teamMembers.join(' '));
 
-    console.log(teamMembers);
+    showVals.textContent = stringFormat.toUpperCase();
+
+    // showVals.innerHTML = stringFormat;
+
+    console.log(teamMembers.join(' '));
 }
 
