@@ -40,6 +40,9 @@
             <div id="makeTheTeam">
 
             </div>
+            <div id ="displayTheTeam">
+
+            </div>
            
 
         </div>

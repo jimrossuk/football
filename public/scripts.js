@@ -25,19 +25,43 @@ function getTheData() {
     //all uppercase names
 
 
-
     let newBtn = document.createElement("BUTTON"); // Create a <button> element
     newBtn.textContent = "Ready to pick your team?";
-
-
     let divWthBtn = document.getElementById("makeTheTeam");
     divWthBtn.append(newBtn);
 
 
+
+    // This is not radmonising nor is it displaying anythign
     divWthBtn.onClick = function () {
-        let randomItems = teamMembers[Math.floor(Math.random() * teamMembers.length)];
-        document.textContent = randomItems;
-        //has to display somewhere..
+        //let displayTeam = getElementById('displayTheTeam');
+        //displayTeam.Math.floor(Math.random() * teamMembers.length);
+        let x = Math.floor(Math.random() * 100);
+        console.log(x);
+        // This aint working    
+
     }
+
+    //Here a random number is working/...
+    console.log(teamMembers);
+    let x = Math.floor(Math.random() * 100);
+    console.log(x);
+
+
+
 }
 
+// ((d) => {
+
+//     divWthBtn.onClick = function () {
+
+//         // let displayTeam = getElementById('displayTheTeam');
+//         // console.log(displayTeam);
+//         d.x = Math.floor(Math.random() * 20);
+//         console.log(x);
+//         //displayTeam.document.textContent;
+//         //has to display somewhere..
+//     }
+
+
+// })(document);
