@@ -2,3 +2,13 @@
   color: green;
 }
 /* not sure if its working yet */
+
+.jimboRRRRR {
+  color: blue;
+  background-color: firebrick;
+}
+
+#newTeam h2 {
+  background-color: firebrick;
+  text-transform: uppercase;
+}

@@ -1,7 +1,17 @@
-let teamMembers
+let teamMembers;
+let shuffledTeam;
+
 function getTheData() {
     let name = document.getElementsByClassName("name");
     teamMembers = new Array();
+
+    let p = document.createElement("p");
+    // set the text inside the <p> 
+    p.textContent = "These are your players";
+    let container = document.getElementById("showTeamMembers");
+    // append the new <p> to the container element
+    // this adds it to the DOM
+    container.append(p);
 
     for (i in name) {
         //extract the value of input elements
@@ -10,26 +20,67 @@ function getTheData() {
             teamMembers.push(singleVal);
         }
     }
-    let showVals = document.getElementById('showTeamMembers');
 
-    //Convert to string format to see the output easily 
-    let stringFormat = String(teamMembers.join(' '));
-    //no comma now  
-    showVals.textContent = stringFormat.toUpperCase();
-    //all uppercase names
-
+    //creates a space for the button to go 
     let divWthBtn = document.getElementById("displayTheTeam");
     divWthBtn.append(newBtn);
+
 }
-
-
-let newBtn = document.createElement("BUTTON"); // Create a <button> element
+// Create a <button> element
+let newBtn = document.createElement("BUTTON");
 newBtn.textContent = "Ready to pick your team? FROM JS";
 
 newBtn.addEventListener('click', () => {
 
 
-    let x = Math.floor(Math.random() * teamMembers.length);
-    console.log(x);
-    // This aint working    
+    // this shuffles the items in the array from the text area
+    function shuffle() {
+        let ctr = teamMembers.length, temp, index;
+
+        // While there are elements in the array
+        while (ctr > 0) {
+            // Pick a random index
+            index = Math.floor(Math.random() * ctr);
+            // Decrease ctr by 1
+            ctr--;
+            // And swap the last element with it
+            temp = teamMembers[ctr];
+            teamMembers[ctr] = teamMembers[index];
+            teamMembers[index] = temp;
+        }
+
+        return teamMembers;
+    } shuffle();
+
+    let shuffledTeam = teamMembers;
+
+
+
+    //this splits the array into two separate arrays
+    let array1 = shuffledTeam.slice(0, 5);
+    let array2 = shuffledTeam.slice(5, 10);
+
+
+    let h1a1 = document.createElement('h1');
+    let h2a1 = document.createElement('h2');
+    let h1a2 = document.createElement('h1');
+    let h2a2 = document.createElement('h2');
+
+    h2a1.textContent = array1.join(' ');
+    h1a1.textContent = "This is your team!";
+    let container = document.getElementById("newTeam");
+    container.append(h1a1);
+    container.append(h2a1);
+
+
+    h1a2.textContent = array2.join(' ');
+    h2a2.textContent = "This is the other team!";
+    let container2 = document.getElementById("otherTeam");
+    container2.append(h1a2);
+    container2.append(h1a2);
+
+    console.log(array1);
+    console.log(array2);
+
+
 })

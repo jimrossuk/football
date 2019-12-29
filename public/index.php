@@ -8,46 +8,50 @@
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <title>5 A Side</title>
             <script src="scripts.js"></script>
+            <link rel="stylesheet" type ="text/css" href = "style.css">
         </head>
         <body>
-        </html>
-        </div class = "container">
-            <h1>5 A Side!</h1>
-            <p>Name</p>
-            <input name="first-name"  type="text" id="first-name" class="name">
-            <input name="first-name"  type="text" id="first-name" class="name">
-            <input name="first-name"  type="text" id="first-name" class="name">
-            <input name="first-name"  type="text" id="first-name" class="name">
-            <input name="first-name"  type="text" id="first-name" class="name">
-            
-            <input name="first-name"  type="text" id="first-name" class="name">
-            <input name="first-name"  type="text" id="first-name" class="name">
-            <input name="first-name"  type="text" id="first-name" class="name">
-            <input name="first-name"  type="text" id="first-name" class="name">
-            <input name="first-name"  type="text" id="first-name" class="name">
-            
+            </html>
+                </div class = "container">
+                    <h1>5 A Side!</h1>
+                    <p>Type in your team members names please</p>
+                    <input name="first-name"  type="text" id="first-name" class="name">
+                    <input name="first-name"  type="text" id="first-name" class="name">
+                    <input name="first-name"  type="text" id="first-name" class="name">
+                    <input name="first-name"  type="text" id="first-name" class="name">
+                    <input name="first-name"  type="text" id="first-name" class="name">
+                    
+                    <input name="first-name"  type="text" id="first-name" class="name">
+                    <input name="first-name"  type="text" id="first-name" class="name">
+                    <input name="first-name"  type="text" id="first-name" class="name">
+                    <input name="first-name"  type="text" id="first-name" class="name">
+                    <input name="first-name"  type="text" id="first-name" class="name">
+                    
 
-            
-            <button onclick= getTheData() >click this it</button>
+                    
+                    <button onclick= getTheData() >Submit</button>
 
-            <div>
-                <ul  id="showTeamMembers">
-                      
-                </ul>
-            </div>
+                    <div>
+                        <ul  id="showTeamMembers">
+                            
+                        </ul>
+                    </div>
 
-            <!-- <div id="makeTheTeam">
-                <button onclick= divWthBtn() >make the team HARD CODE HTML</button>
+                    <div id ="displayTheTeam">
+                    </div>
 
-            </div> -->
+                    <div id ="newTeam">
+                        <!-- <h1>This is your team</h1> -->
+                    </div>
+                
+                    <div id= "otherTeam">
+                    <!-- <h1>That is their team</h1> -->
+                    </div>
 
-            <div id ="displayTheTeam">
-
-            </div>
-           
-
-        </div>
-        <?php
+                </div>
+            </html>
+        </body>
+<?php
 
 
 
