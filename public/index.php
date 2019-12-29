@@ -45,7 +45,7 @@
                     </div>
                 
                     <div id= "otherTeam">
-                    <!-- <h1>That is their team</h1> -->
+                    
                     </div>
 
                 </div>

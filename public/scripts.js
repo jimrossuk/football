@@ -63,6 +63,7 @@ newBtn.addEventListener('click', () => {
 
     let h1a1 = document.createElement('h1');
     let h2a1 = document.createElement('h2');
+
     let h1a2 = document.createElement('h1');
     let h2a2 = document.createElement('h2');
 
@@ -73,13 +74,13 @@ newBtn.addEventListener('click', () => {
     container.append(h2a1);
 
 
-    h1a2.textContent = array2.join(' ');
-    h2a2.textContent = "This is the other team!";
     let container2 = document.getElementById("otherTeam");
+    h2a2.textContent = array2.join(' ');
+    h1a2.textContent = "This is the other team!";
     container2.append(h1a2);
-    container2.append(h1a2);
+    container2.append(h2a2);
 
-    console.log(array1);
+    console.log(container, container2);
     console.log(array2);
 
 
