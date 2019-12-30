@@ -55,10 +55,19 @@ newBtn.addEventListener('click', () => {
     let shuffledTeam = teamMembers;
 
 
-
     //this splits the array into two separate arrays
-    let array1 = shuffledTeam.slice(0, 5);
-    let array2 = shuffledTeam.slice(5, 10);
+
+    // let array1 = shuffledTeam.slice(0, Math.ceil(shuffledTeam / 2));
+    //let array2 = shuffledTeam;
+    let halfwayThrough = Math.floor(shuffledTeam.length / 2)
+    // or instead of floor you can use ceil depending on what side gets the extra data
+
+    let array1 = shuffledTeam.slice(0, halfwayThrough);
+    let array2 = shuffledTeam.slice(halfwayThrough, shuffledTeam.length);
+
+
+
+
 
 
     let h1a1 = document.createElement('h1');
@@ -82,6 +91,4 @@ newBtn.addEventListener('click', () => {
 
     console.log(container, container2);
     console.log(array2);
-
-
 })
