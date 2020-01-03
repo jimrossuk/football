@@ -98,13 +98,7 @@ button {
   padding: 2rem;
 }
 
-/* #bTeam {
-  display: flex;
-} */
-
 #bTeam #aTeam,
 h2 {
   flex-direction: row;
-  background: firebrick;
-  flex-direction: column;
 }

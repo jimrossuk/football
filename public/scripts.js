@@ -30,7 +30,7 @@ function submit() {
 // Create a <button> element
 let newBtn = document.createElement("button");
 newBtn.classList.add('newBtn');
-newBtn.textContent = "Mix the Team";
+newBtn.textContent = "Display Teams";
 
 newBtn.addEventListener('click', () => {
 
@@ -54,6 +54,7 @@ newBtn.addEventListener('click', () => {
     } shuffle();
 
     let shuffledTeam = teamMembers;
+
 
     //this splits the array into two separate arrays
     let halfTeam = Math.floor(shuffledTeam.length / 2);
