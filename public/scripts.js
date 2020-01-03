@@ -1,13 +1,14 @@
 let teamMembers;
 let shuffledTeam;
 
-function getTheData() {
+function submit() {
     let name = document.getElementsByClassName("name");
     teamMembers = new Array();
 
+
     let p = document.createElement("p");
     // set the text inside the <p> 
-    p.textContent = "These are your players";
+    //p.textContent = "Could say something here";
     let container = document.getElementById("showTeamMembers");
     // append the new <p> to the container element
     // this adds it to the DOM
@@ -27,8 +28,8 @@ function getTheData() {
 
 }
 // Create a <button> element
-let newBtn = document.createElement("BUTTON");
-newBtn.textContent = "Ready to pick your team? FROM JS";
+let newBtn = document.createElement("button");
+newBtn.textContent = "Mix the Team";
 
 newBtn.addEventListener('click', () => {
 
@@ -48,26 +49,16 @@ newBtn.addEventListener('click', () => {
             teamMembers[ctr] = teamMembers[index];
             teamMembers[index] = temp;
         }
-
         return teamMembers;
     } shuffle();
 
     let shuffledTeam = teamMembers;
 
-
     //this splits the array into two separate arrays
+    let halfTeam = Math.floor(shuffledTeam.length / 2);
 
-    // let array1 = shuffledTeam.slice(0, Math.ceil(shuffledTeam / 2));
-    //let array2 = shuffledTeam;
-    let halfwayThrough = Math.floor(shuffledTeam.length / 2)
-    // or instead of floor you can use ceil depending on what side gets the extra data
-
-    let array1 = shuffledTeam.slice(0, halfwayThrough);
-    let array2 = shuffledTeam.slice(halfwayThrough, shuffledTeam.length);
-
-
-
-
+    let array1 = shuffledTeam.slice(0, halfTeam);
+    let array2 = shuffledTeam.slice(halfTeam, shuffledTeam.length);
 
 
     let h1a1 = document.createElement('h1');
@@ -76,18 +67,30 @@ newBtn.addEventListener('click', () => {
     let h1a2 = document.createElement('h1');
     let h2a2 = document.createElement('h2');
 
+
     h2a1.textContent = array1.join(' ');
-    h1a1.textContent = "This is your team!";
-    let container = document.getElementById("newTeam");
+    h1a1.textContent = "Your Team";
+
+    let container = document.getElementById("aTeam");
     container.append(h1a1);
     container.append(h2a1);
 
+    //Make a team name on click
 
-    let container2 = document.getElementById("otherTeam");
+    let container2 = document.getElementById("bTeam");
     h2a2.textContent = array2.join(' ');
-    h1a2.textContent = "This is the other team!";
+    h1a2.textContent = "Their Team";
+
+
     container2.append(h1a2);
     container2.append(h2a2);
+
+
+
+
+
+
+
 
     console.log(container, container2);
     console.log(array2);

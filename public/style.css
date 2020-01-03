@@ -1,14 +1,94 @@
-#showTeamMembers {
-  color: green;
+.container {
+  display: block;
+  background: #2f6294;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin: 0;
 }
-/* not sure if its working yet */
-
-.jimboRRRRR {
-  color: blue;
-  background-color: firebrick;
+#firstName {
+  padding: 1.2rem;
+  text-align: center;
+  font-size: x-large;
+  color: aliceblue;
+  justify-content: center;
+}
+.inputNames {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 0 3% 0;
 }
 
-#newTeam h2 {
-  background-color: firebrick;
+.mainText {
+  /* background: lightcoral; */
+  display: block;
+  align-self: center;
+  font-size: 2.5rem;
+  padding: 0 3% 0 3%;
+  color: azure;
+}
+h3 {
   text-transform: uppercase;
+}
+.mainTextSection {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  background: green;
+}
+.title {
+  /* background: fuchsia; */
+  /* padding: 2%; */
+  display: inline-flex;
+  flex-direction: column;
+  color: white;
+}
+/* This is styling the text in Headline */
+.mainHeadline {
+  color: #d00027;
+  display: block;
+  justify-content: start;
+  font-size: 2.8em;
+  padding: 0;
+  /* margin-bottom: 0; */
+}
+/* THis is stying on the number in Headline */
+.mainHeadlineNum {
+  color: #d00027;
+  display: inline-block;
+  text-align: center;
+  font-size: 20rem;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+input:nth-child(odd) {
+  background: darkgreen;
+}
+input:nth-child(even) {
+  background: forestgreen;
+}
+
+button {
+  background: blue;
+}
+.teamDisplay {
+  display: flex;
+}
+#aTeam,
+#bTeam {
+  text-transform: uppercase;
+  font-size: 80%;
+  padding: 2rem;
+}
+
+/* #bTeam {
+  display: flex;
+} */
+
+#bTeam #aTeam,
+h2 {
+  flex-direction: row;
+  background: firebrick;
+  flex-direction: column;
 }

@@ -9,27 +9,39 @@
             <title>5 A Side</title>
             <script src="scripts.js"></script>
             <link rel="stylesheet" type ="text/css" href = "style.css">
+            <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
         </head>
         <body>
-            </html>
-                </div class = "container">
-                    <h1>5 A Side!</h1>
-                    <p>Type in your team members names please</p>
-                    <input name="first-name"  type="text" id="first-name" class="name">
-                    <input name="first-name"  type="text" id="first-name" class="name">
-                    <input name="first-name"  type="text" id="first-name" class="name">
-                    <input name="first-name"  type="text" id="first-name" class="name">
-                    <input name="first-name"  type="text" id="first-name" class="name">
-                    
-                    <input name="first-name"  type="text" id="first-name" class="name">
-                    <input name="first-name"  type="text" id="first-name" class="name">
-                    <input name="first-name"  type="text" id="first-name" class="name">
-                    <input name="first-name"  type="text" id="first-name" class="name">
-                    <input name="first-name"  type="text" id="first-name" class="name">
-                    
+            <html>
+                <div class = "container">
+                    <div class="mainTextSection">
+                        <div class="title">
+                        <h1 class= "mainHeadlineNum">5 </h1>
+                        <h1 class= "mainHeadline">A Side! </h1>
+                        </div>
+                        <div class="mainText">    
+                            <h3>Football team picker</h3>
+                            <h4>This is an app where you and your mates can organise teams based on a randomly generated computer model. This will leave you to  concentrate on the match and not on who is on whos team!</h4>
+                            <h5>Lets play!</h5>
+                            <p class="mainText">Type in your team members names please</p>
+                        </div>
+                    </div>
+                    <div class="inputNames">
+                        <input  type="text" id="firstName" class="name">
+                        <input  type="text" id="firstName" class="name">
+                        <input  type="text" id="firstName" class="name">
+                        <input  type="text" id="firstName" class="name">
+                        <input  type="text" id="firstName" class="name">
+                        
+                        <input  type="text" id="firstName" class="name">
+                        <input  type="text" id="firstName" class="name">
+                        <input  type="text" id="firstName" class="name">
+                        <input  type="text" id="firstName" class="name">
+                        <input  type="text" id="firstName" class="name">
+                    </div>
 
                     
-                    <button onclick= getTheData() >Submit</button>
+                    <button onclick= submit() >Submit</button>
 
                     <div>
                         <ul  id="showTeamMembers">
@@ -39,14 +51,17 @@
 
                     <div id ="displayTheTeam">
                     </div>
+                    <div class="teamDisplay">
 
-                    <div id ="newTeam">
-                        <!-- <h1>This is your team</h1> -->
+                        <div id ="aTeam">
+                           
+                        </div>
+                        
+                        <div id= "bTeam">
+                            
+                            </div>
                     </div>
-                
-                    <div id= "otherTeam">
                     
-                    </div>
 
                 </div>
             </html>
