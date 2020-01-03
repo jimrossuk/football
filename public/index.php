@@ -22,7 +22,7 @@
                         <div class="mainText">    
                             <h3>Football team picker</h3>
                             <h4>This is an app where you and your mates can organise teams based on a randomly generated computer model. This will leave you to  concentrate on the match and not on who is on whos team!</h4>
-                            <h5>Lets play!</h5>
+                           
                             <p class="mainText">Type in your team members names please</p>
                         </div>
                     </div>
