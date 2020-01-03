@@ -55,7 +55,6 @@ newBtn.addEventListener('click', () => {
 
     let shuffledTeam = teamMembers;
 
-
     //this splits the array into two separate arrays
     let halfTeam = Math.floor(shuffledTeam.length / 2);
 
@@ -86,13 +85,6 @@ newBtn.addEventListener('click', () => {
 
     container2.append(h1a2);
     container2.append(h2a2);
-
-
-
-
-
-
-
 
     console.log(container, container2);
     console.log(array2);

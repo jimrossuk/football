@@ -50,9 +50,7 @@ h3 {
   display: block;
   justify-content: center;
   font-size: 2.8em;
-
   margin-top: -190%;
-  /* margin-bottom: 0; */
 }
 /* THis is stying on the number in Headline */
 .mainHeadlineNum {
@@ -91,6 +89,7 @@ button {
   display: flex;
   justify-content: space-evenly;
 }
+
 #aTeam,
 #bTeam {
   text-transform: uppercase;
@@ -101,4 +100,5 @@ button {
 #bTeam #aTeam,
 h2 {
   flex-direction: row;
+  color: #d00027;
 }
