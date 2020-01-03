@@ -72,10 +72,24 @@ input:nth-child(even) {
 }
 
 button {
-  background: blue;
+  background: firebrick;
+  padding: 1.6rem;
+  margin: 1.1rem;
+  border-radius: 40%;
 }
+
+.submitBtn {
+  font-size: 2rem;
+}
+.newBtn {
+  font-size: 1.3rem;
+  color: white;
+  border-radius: 10%;
+}
+
 .teamDisplay {
   display: flex;
+  justify-content: space-evenly;
 }
 #aTeam,
 #bTeam {

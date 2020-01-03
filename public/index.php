@@ -41,7 +41,7 @@
                     </div>
 
                     
-                    <button onclick= submit() >Submit</button>
+                    <button class="submitBtn" onclick= submit() >Submit</button>
 
                     <div>
                         <ul  id="showTeamMembers">

@@ -29,6 +29,7 @@ function submit() {
 }
 // Create a <button> element
 let newBtn = document.createElement("button");
+newBtn.classList.add('newBtn');
 newBtn.textContent = "Mix the Team";
 
 newBtn.addEventListener('click', () => {
@@ -79,7 +80,7 @@ newBtn.addEventListener('click', () => {
 
     let container2 = document.getElementById("bTeam");
     h2a2.textContent = array2.join(' ');
-    h1a2.textContent = "Their Team";
+    h1a2.textContent = "Your Team";
 
 
     container2.append(h1a2);
