@@ -61,31 +61,39 @@ newBtn.addEventListener('click', () => {
     let array1 = shuffledTeam.slice(0, halfTeam);
     let array2 = shuffledTeam.slice(halfTeam, shuffledTeam.length);
 
+    let captain1 = array1[0];
+    let captain2 = array2[0];
+    console.log(captain1, captain2);
+
 
     let h1a1 = document.createElement('h1');
     let h2a1 = document.createElement('h2');
+    let capt1 = document.createElement('h3');
 
     let h1a2 = document.createElement('h1');
     let h2a2 = document.createElement('h2');
+    let capt2 = document.createElement('h3');
 
-
-    h2a1.textContent = array1.join(' ');
+    h2a1.textContent = array1.join('  ');
     h1a1.textContent = "Your Team";
+    capt1.textContent = "Captain";
+
 
     let container = document.getElementById("aTeam");
     container.append(h1a1);
     container.append(h2a1);
+    container.append(capt1);
+    container.append(captain1);
+
 
     //Make a team name on click
 
     let container2 = document.getElementById("bTeam");
-    h2a2.textContent = array2.join(' ');
+    h2a2.textContent = array2.join('  ');
     h1a2.textContent = "Your Team";
-
-
+    capt2.textContent = " Captain ";
     container2.append(h1a2);
     container2.append(h2a2);
-
-    console.log(container, container2);
-    console.log(array2);
+    container2.append(capt2);
+    container2.append(captain2);
 })
