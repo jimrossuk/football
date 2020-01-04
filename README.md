@@ -1,4 +1,8 @@
 
+A 5 a Side Football picker app 
+
+This is a technical challenge as part of DevelopMe Codding Fellowship
+
 
 # Scotch Box
 
