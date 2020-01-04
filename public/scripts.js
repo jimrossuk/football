@@ -76,7 +76,7 @@ newBtn.addEventListener('click', () => {
 
     h2a1.textContent = array1.join('  ');
     h1a1.textContent = "Your Team";
-    capt1.textContent = "Captain";
+    capt1.textContent = "Captain:";
 
 
     let container = document.getElementById("aTeam");
@@ -90,8 +90,8 @@ newBtn.addEventListener('click', () => {
 
     let container2 = document.getElementById("bTeam");
     h2a2.textContent = array2.join('  ');
-    h1a2.textContent = "Your Team";
-    capt2.textContent = " Captain ";
+    h1a2.textContent = "Their Team";
+    capt2.textContent = "Captain:";
     container2.append(h1a2);
     container2.append(h2a2);
     container2.append(capt2);
