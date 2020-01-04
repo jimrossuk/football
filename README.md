@@ -1,3 +1,6 @@
+A 5 A Side Football picker app. 
+
+Breif: Build an app in any software that you ar comproftable with;
 
 # Scotch Box
 
