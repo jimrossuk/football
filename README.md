@@ -11,7 +11,7 @@ Prerequisites
 You will need to have NPM installed in order to set the application up.
 
 Installing
-Clone the git repository and run NPM install.
+
 
 
 # Scotch Box
