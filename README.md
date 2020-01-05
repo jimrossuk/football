@@ -4,13 +4,11 @@ The Brief:
 
 The exercise is to create a tool which randomly picks 5-a-side football teams from a list of 10 names (10 players = 2 teams of 5).
 
-It’s up to you how you implement this, with JavaScript, PHP, as a web page, or as an app.
 
 To start the app, 
 
 In the command line:
 
-gi
 git clone git@github.com:/jimrossuk/football
 ant up
 
