@@ -6,16 +6,7 @@ The exercise is to create a tool which randomly picks 5-a-side football teams 
 
 
 To start the app, 
-
-In the command line:
-
-git clone git@github.com:jimrossuk/football.git
-
-Once all are installed.
-
-npm start
-
-
+click the index.html file and open it in Google Chrome
 
 Technology:
 
