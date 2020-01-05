@@ -10,7 +10,6 @@ To start the app,
 In the command line:
 
 git clone git@github.com:/jimrossuk/football
-ant up
 
 Once all are installed, 
 npm start
