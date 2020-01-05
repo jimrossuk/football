@@ -1,4 +1,19 @@
 
+A 5 a Side Football picker app 
+
+This is a technical challenge as part of DevelopMe Codding Fellowship
+
+
+Setup
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+Prerequisites
+You will need to have NPM installed in order to set the application up.
+
+Installing
+
+
+
 # Scotch Box
 
 ## [GET SCOTCH BOX PRO](https://box.scotch.io/pro)
