@@ -13,7 +13,7 @@ I chose to write the brief in HTML5 SCC3 and JavaScript as it would be simple so
  because it's a technology that I really enjoy working with it would be simple to add to it.
 
 
-How I picked the teams:
+How I picked the teams
 
 
 let teamMembers;
