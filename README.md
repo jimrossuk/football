@@ -1,16 +1,85 @@
+Hello and Welcome to 5 A Side Football picker
 
-A 5 a Side Football picker app 
+The Brief:
 
-This is a technical challenge as part of DevelopMe Codding Fellowship
+The exercise is to create a tool which randomly picks 5-a-side football teams from a list of 10 names (10 players = 2 teams of 5).
+
+It’s up to you how you implement this, with JavaScript, PHP, as a web page, or as an app.
+
+To start the app, simply drag the index.html file in Google Chrome.
 
 
-Setup
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+I chose to write the brief in HTML5 SCC3 and JavaScript as it would be simple solution. If the app were to be implemented into an WordPress CMS, which 
+ because it's a technology that I really enjoy working with it would be simple to add to it.
 
-Prerequisites
-You will need to have NPM installed in order to set the application up.
 
-Installing
+How I picked the teams:
+
+
+let teamMembers;
+let shuffledTeam;
+
+function submit() {
+    let name = document.getElementsByClassName("name");
+    teamMembers = new Array();
+
+
+    let p = document.createElement("p");
+    // set the text inside the <p> 
+
+    let container = document.getElementById("showTeamMembers");
+    // append the new <p> to the container element
+    // this adds it to the DOM
+    container.append(p);
+
+    for (i in name) {
+        //extract the value of input elements
+        let singleVal = name[i].value;
+        if (singleVal !== "" && singleVal !== undefined) {
+            teamMembers.push(singleVal);
+        }
+    }
+
+    //creates a space for the button to go 
+    let divWthBtn = document.getElementById("displayTheTeam");
+    divWthBtn.append(newBtn);
+
+}
+// Create a <button> element
+let newBtn = document.createElement("button");
+newBtn.classList.add('newBtn');
+newBtn.textContent = "Display Teams";
+
+newBtn.addEventListener('click', () => {
+
+
+    // this shuffles the items in the array from the text area
+    function shuffle() {
+        let ctr = teamMembers.length, temp, index;
+
+        // While there are elements in the array
+        while (ctr > 0) {
+            // Pick a random index
+            index = Math.floor(Math.random() * ctr);
+            // Decrease ctr by 1
+            ctr--;
+            // And swap the last element with it
+            temp = teamMembers[ctr];
+            teamMembers[ctr] = teamMembers[index];
+            teamMembers[index] = temp;
+        }
+        return teamMembers;
+    } shuffle();
+
+
+
+What I would like to improve
+
+There are lots I would like to change and I will when I get back to this app. Ideally I would like to have the inputs present themselves after the name has been imputed.
+I would also like to add a team name and an option to send out the teams by email.
+
+
+
 
 
 
