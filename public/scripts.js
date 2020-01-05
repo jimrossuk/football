@@ -8,7 +8,7 @@ function submit() {
 
     let p = document.createElement("p");
     // set the text inside the <p> 
-    //p.textContent = "Could say something here";
+
     let container = document.getElementById("showTeamMembers");
     // append the new <p> to the container element
     // this adds it to the DOM
@@ -75,7 +75,7 @@ newBtn.addEventListener('click', () => {
     let capt2 = document.createElement('h3');
 
     h2a1.textContent = array1.join('  ');
-    h1a1.textContent = "Your Team";
+    h1a1.textContent = "Team One";
     capt1.textContent = "Captain:";
 
 
@@ -86,11 +86,11 @@ newBtn.addEventListener('click', () => {
     container.append(captain1);
 
 
-    //Make a team name on click
+    //Displays the team members and Captain
 
     let container2 = document.getElementById("bTeam");
     h2a2.textContent = array2.join('  ');
-    h1a2.textContent = "Their Team";
+    h1a2.textContent = "Team Two";
     capt2.textContent = "Captain:";
     container2.append(h1a2);
     container2.append(h2a2);
