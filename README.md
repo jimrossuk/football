@@ -11,7 +11,8 @@ In the command line:
 
 git clone git@github.com:jimrossuk/football.git
 
-Once all are installed, 
+Once all are installed.
+
 npm start
 
 
