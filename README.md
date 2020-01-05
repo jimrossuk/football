@@ -6,11 +6,23 @@ The exercise is to create a tool which randomly picks 5-a-side football teams 
 
 It’s up to you how you implement this, with JavaScript, PHP, as a web page, or as an app.
 
-To start the app, simply drag the index.html file in Google Chrome.
+To start the app, 
+
+In the command line:
+
+gi
+git clone git@github.com:/jimrossuk/football
+ant up
+
+Once all are installed, 
+npm start
 
 
-I chose to write the brief in HTML5 SCC3 and JavaScript as it would be simple solution. If the app were to be implemented into an WordPress CMS, which 
- because it's a technology that I really enjoy working with it would be simple to add to it.
+
+Technology:
+
+I chose to write the brief in HTML5 SCC3 and JavaScript as it would be simple solution. If the app were to be implemented into an WordPress CMS, it would be a fast way of implementing the technology
+ I really enjoy working with it would be simple to add to it. It suites my logic too.
 
 
 How I picked the teams:
@@ -76,7 +88,9 @@ newBtn.addEventListener('click', () => {
 What I would like to improve
 
 There are lots I would like to change and I will when I get back to this app. Ideally I would like to have the inputs present themselves after the name has been imputed.
-I would also like to add a team name and an option to send out the teams by email.
+I would also like to add an imput for the user to add a team name and an option to send out the teams by email.
+
+
 
 
 
